@@ -29,3 +29,13 @@ SOURCES += main.cpp\
 HEADERS  += mainwindow.h
 
 FORMS    += mainwindow.ui
+INCLUDEPATH += $$PWD/ffmpeg/dev/include
+
+LIBS+=$$PWD/ffmpeg/dev/lib/libavcodec.dll.a\
+      $$PWD/ffmpeg/dev/lib/libavdevice.dll.a\
+      $$PWD/ffmpeg/dev/lib/libavfilter.dll.a\
+      $$PWD/ffmpeg/dev/lib/libavformat.dll.a\
+      $$PWD/ffmpeg/dev/lib/libavutil.dll.a\
+      $$PWD/ffmpeg/dev/lib/libswresample.dll.a\
+      $$PWD/ffmpeg/dev/lib/libswscale.dll.a\
+      $$PWD/ffmpeg/dev/lib/libpostproc.dll.a
