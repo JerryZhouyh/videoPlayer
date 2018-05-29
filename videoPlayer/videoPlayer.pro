@@ -24,9 +24,11 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    videotoimage.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    videotoimage.h
 
 FORMS    += mainwindow.ui
 INCLUDEPATH += $$PWD/ffmpeg/dev/include
